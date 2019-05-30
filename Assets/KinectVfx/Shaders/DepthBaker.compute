@@ -1,0 +1,38 @@
+﻿#pragma kernel CSMain
+
+float Threshold;
+
+StructuredBuffer<uint> DepthBuffer;
+StructuredBuffer<uint> ColorSpaceBuffer;
+
+RWTexture2D<float4> ColorMap;
+RWTexture2D<float4> PositionMap;
+RWTexture2D<float4> DepthMap;
+Texture2D<float4> ColorTexture;
+
+
+[numthreads(8,8,1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    uint i = id.x + id.y * 512;
+
+    // colorMap
+    uint colorX = ColorSpaceBuffer[i];
+    uint colorY = ColorSpaceBuffer[i + (512 * 424)];
+    uint2 colorSpace = uint2(colorX, colorY);
+    ColorMap[id.xy] = ColorTexture[colorSpace];
+
+    // positionMap
+    float depth = DepthBuffer[i / 2] / 4294967295.0;
+    float value = depth * 10.0;
+    depth = depth * depth * 1000.0;
+    if (value > Threshold) {
+        ColorMap[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+        PositionMap[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    } else {
+        PositionMap[id.xy] = float4(id.x / 512.0, id.y / 424.0, depth, 1.0) * ColorMap[id.xy].a;
+    }
+
+    // Depth
+    DepthMap[id.xy] = float4(depth, depth, depth, 1.0);
+}
