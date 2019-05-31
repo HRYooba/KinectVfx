@@ -36,8 +36,8 @@ MonoBehaviour:
   - title: Point Color
     position:
       serializedVersion: 2
-      x: 1004
-      y: 1526
+      x: 975
+      y: 1466
       width: 900
       height: 314
     contents:
@@ -58,10 +58,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 612
+    x: 0
     y: -1227
-    width: 2270
-    height: 3067
+    width: 2882
+    height: 2993
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1046,7 +1046,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 16
           m_Value: 20000
         - m_ExpressionIndex: 17
-          m_Value: 8
+          m_Value: 20
         - m_ExpressionIndex: 18
           m_Value: 0
         - m_ExpressionIndex: 20
@@ -1056,7 +1056,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 22
           m_Value: -4.24
         - m_ExpressionIndex: 23
-          m_Value: 8.19
+          m_Value: 20
         - m_ExpressionIndex: 24
           m_Value: 0
         - m_ExpressionIndex: 25
@@ -2527,7 +2527,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":5.119999885559082,"y":-4.239999771118164,"z":8.1899995803833}'
+      m_SerializableObject: '{"x":5.119999885559082,"y":-4.239999771118164,"z":20.0}'
     m_Space: 2147483647
   m_Property:
     name: valueScale
@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1607, y: 1670}
+  m_UIPosition: {x: 1578, y: 1610}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -4130,7 +4130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1251, y: 1721}
+  m_UIPosition: {x: 1222, y: 1661}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -4369,7 +4369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1029, y: 1705}
+  m_UIPosition: {x: 1000, y: 1645}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -4529,7 +4529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1248, y: 1588}
+  m_UIPosition: {x: 1219, y: 1528}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -6952,7 +6952,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":5.119999885559082,"y":-4.239999771118164,"z":8.0}'
+      m_SerializableObject: '{"x":5.119999885559082,"y":-4.239999771118164,"z":20.0}'
     m_Space: 2147483647
   m_Property:
     name: valueScale
