@@ -25,10 +25,12 @@ void CSMain(uint3 id : SV_DispatchThreadID)
     // positionMap
     float depth = DepthBuffer[i / 2] / 4294967295.0;
     float value = depth * 10.0;
-    depth = depth * depth * 1000.0;
+    depth = depth * depth * 100.0;
     if (value > Threshold) {
         ColorMap[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
         PositionMap[id.xy] = float4(0.0, 0.0, 0.0, 0.0);
+    } else if (value < 0.01) {
+        PositionMap[id.xy] = float4(1.0, 0.0, 0.0, 0.0);
     } else {
         PositionMap[id.xy] = float4(id.x / 512.0, id.y / 424.0, depth, 1.0) * ColorMap[id.xy].a;
     }

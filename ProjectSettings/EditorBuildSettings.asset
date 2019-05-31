@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/KinectVfx/BootUp.unity
+    guid: f5ee87d50ded7de47ad8969007a4531e
+  - enabled: 1
+    path: Assets/KinectVfx/Scenes/Boxles.unity
+    guid: aaa0c0c2f3081174aa5cb42832a976f3
+  - enabled: 1
+    path: Assets/KinectVfx/Scenes/Fire.unity
+    guid: c768326fb8f828d4c872457abea888e6
+  - enabled: 1
     path: Assets/KinectVfx/Scenes/Plexus.unity
     guid: d7d4c971244ca8b46b466c552f537c15
+  - enabled: 1
+    path: Assets/KinectVfx/Scenes/Wire.unity
+    guid: 50e1cc6cd059cc44186f2a45a4e78469
+  - enabled: 1
+    path: Assets/KinectVfx/Scenes/Trajectory.unity
+    guid: 06a836e007a550e488f5d9748d48bc0d
   m_configObjects: {}

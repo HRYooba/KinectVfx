@@ -915,9 +915,6 @@ VFXRenderer:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -945,7 +942,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222938838}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 190126424486584478ed4245f3a6dc7d, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 1fb176e2b3ff6e4458142c2326e99caa, type: 3}
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
@@ -998,7 +995,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222938838}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: ed3a88de2d1aaa54da602aca42ff9d15, type: 2}
   m_Animations:
